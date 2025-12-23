@@ -1,0 +1,103 @@
+/* Geral */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a18cd1, #fbc2eb);
+    background-size: 400% 400%;
+    animation: gradientBG 20s ease infinite;
+    color: #fff;
+}
+
+@keyframes gradientBG {
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.container { text-align: center; }
+
+.login-box {
+    background: rgba(0,0,0,0.5);
+    padding: 35px 40px;
+    border-radius: 25px;
+    box-shadow: 0 0 40px rgba(255,255,255,0.3);
+    max-width: 450px;
+    width: 90%;
+}
+
+h1 {
+    margin-bottom: 25px;
+    font-size: 28px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%,100% {transform: scale(1);}
+    50% {transform: scale(1.05);}
+}
+
+.charadas {
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.5;
+    background: rgba(255,255,255,0.1);
+    padding: 15px;
+    border-radius: 15px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+input {
+    padding: 12px;
+    width: 100%;
+    border-radius: 15px;
+    border: none;
+    margin: 15px 0;
+    font-size: 16px;
+    outline: none;
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    background: #ff7eb9;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+button:hover { background: #ff4a91; }
+
+#shuffle-btn { background: #ffa500; }
+#shuffle-btn:hover { background: #ff7a00; }
+
+#message {
+    margin-top: 10px;
+    min-height: 22px;
+    font-weight: bold;
+    color: #ffe;
+}
+
+.shake { animation: shake 0.5s; }
+@keyframes shake {
+    0%{ transform: translateX(0);}
+    25%{ transform: translateX(-5px);}
+    50%{ transform: translateX(5px);}
+    75%{ transform: translateX(-5px);}
+    100%{ transform: translateX(0);}
+}
